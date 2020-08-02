@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Try to Build
         uses: docker://allesrebel/nrf52-dev-env:latest
-        run: |
-        /usr/bin/docker run --rm -v "/home/runner/work/keyboard/keyboard":"/opt/project" allesrebel/nrf52-dev-env:latest
+        env:
+          MAKEFILE_DIR: $GITHUB_WORKSPACE
