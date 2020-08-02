@@ -14,4 +14,4 @@ jobs:
       - name: Try to Build
         uses: docker://allesrebel/nrf52-dev-env:latest
         env:
-          MAKEFILE_DIR: $GITHUB_WORKSPACE
+          MAKEFILE_DIR: /github/workspace
