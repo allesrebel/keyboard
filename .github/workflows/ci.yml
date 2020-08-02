@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
+      - name: Try to Build
+        uses: docker://allesrebel/nrf52-dev-env:latest
         with:
-          path: $GITHUB_WORKSPACE
-      - uses: docker://allesrebel/nrf52-dev-env:latest
+          volumns: $GITHUB_WORKSPACE:/opt/project
