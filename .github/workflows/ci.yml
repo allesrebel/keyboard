@@ -1,22 +1,14 @@
 name: CI
 
 on:
-	push:
-		branches: [ master ]
-	pull_request:
-		branches: [ master ]
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-	build:
-		runs-on: ubuntu-latest
-		# Checks-out your repository under $GITHUB_WORKSPACE
-		- uses: actions/checkout@v2
-		- uses: docker://allesrebel/nrf52-dev-env:latest
-			with:
-				volumes:
-				- $GITHUB_WORKSPACE:/opt/project
-
-		# Runs a single command using the runners shell
-		- name: Run a one-line script
-			run: echo Hello, world!
+  build:
+    runs-on: ubuntu-latest
+    - uses: actions/checkout@v2
+    - uses: docker://allesrebel/nrf52-dev-env:latest
