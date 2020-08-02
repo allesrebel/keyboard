@@ -1,15 +1,14 @@
-name: CI
-
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+    - main
+    - release/*
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
+    steps:
       - name: Check out code
         uses: actions/checkout@v2
         with:
