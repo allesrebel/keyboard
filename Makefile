@@ -25,7 +25,6 @@ SRC_FILES += \
   $(SDK_ROOT)/components/libraries/fifo/app_fifo.c \
   $(SDK_ROOT)/components/libraries/scheduler/app_scheduler.c \
   $(SDK_ROOT)/components/libraries/timer/app_timer2.c \
-  $(SDK_ROOT)/components/libraries/uart/app_uart_fifo.c \
   $(SDK_ROOT)/components/libraries/usbd/app_usbd.c \
   $(SDK_ROOT)/components/libraries/usbd/app_usbd_core.c \
   $(SDK_ROOT)/components/libraries/usbd/class/hid/app_usbd_hid.c \
@@ -43,7 +42,6 @@ SRC_FILES += \
   $(SDK_ROOT)/components/libraries/atomic/nrf_atomic.c \
   $(SDK_ROOT)/components/libraries/balloc/nrf_balloc.c \
   $(SDK_ROOT)/components/libraries/cli/nrf_cli.c \
-  $(SDK_ROOT)/components/libraries/cli/uart/nrf_cli_uart.c \
   $(SDK_ROOT)/external/fprintf/nrf_fprintf.c \
   $(SDK_ROOT)/external/fprintf/nrf_fprintf_format.c \
   $(SDK_ROOT)/components/libraries/memobj/nrf_memobj.c \
@@ -55,7 +53,6 @@ SRC_FILES += \
   $(SDK_ROOT)/components/libraries/strerror/nrf_strerror.c \
   $(SDK_ROOT)/integration/nrfx/legacy/nrf_drv_clock.c \
   $(SDK_ROOT)/integration/nrfx/legacy/nrf_drv_power.c \
-  $(SDK_ROOT)/integration/nrfx/legacy/nrf_drv_uart.c \
   $(SDK_ROOT)/components/drivers_nrf/nrf_soc_nosd/nrf_nvic.c \
   $(SDK_ROOT)/components/drivers_nrf/nrf_soc_nosd/nrf_soc.c \
   $(SDK_ROOT)/modules/nrfx/soc/nrfx_atomic.c \
@@ -64,8 +61,6 @@ SRC_FILES += \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_power.c \
   $(SDK_ROOT)/modules/nrfx/drivers/src/prs/nrfx_prs.c \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_systick.c \
-  $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_uart.c \
-  $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_uarte.c \
   $(SDK_ROOT)/modules/nrfx/drivers/src/nrfx_usbd.c \
   $(SDK_ROOT)/components/libraries/bsp/bsp.c \
   $(SDK_ROOT)/components/libraries/bsp/bsp_cli.c \
@@ -98,9 +93,7 @@ INC_FOLDERS += \
   $(SDK_ROOT)/components/libraries/ringbuf \
   $(SDK_ROOT)/components/libraries/usbd/class/hid \
   $(SDK_ROOT)/components/libraries/hardfault/nrf52 \
-  $(SDK_ROOT)/components/libraries/cli/uart \
   $(SDK_ROOT)/components/libraries/hardfault \
-  $(SDK_ROOT)/components/libraries/uart \
   $(SDK_ROOT)/components/libraries/log \
   $(SDK_ROOT)/components/libraries/button \
   $(SDK_ROOT)/modules/nrfx \
